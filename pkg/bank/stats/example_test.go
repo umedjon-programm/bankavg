@@ -4,7 +4,7 @@ import (
 	"github.com/umedjon-programm/bankavg/pkg/bank/types"
 	"fmt"
 )
- func ExampleAvg(){
+ func ExampleTotalInCategore(){
 	 payments:=[]types.Payment{
 		 {
 			 ID: 1,
@@ -14,7 +14,7 @@ import (
 		 {
 			ID: 1,
 			Amount: 1000,
-			Category: "oli",
+			Category: "miyona",
 		},
 		{
 			ID: 1,
@@ -28,7 +28,7 @@ import (
 		},
 
 	 }
-	 fmt.Println(Avg(payments))
+	 fmt.Println(TotalInCategory(payments,"oli"))
  }
  //Output:
- //1000
+ //3000
